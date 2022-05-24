@@ -17,43 +17,26 @@
         <h2>Aplicaciones</h2>
         <p>Selecciona la aplicación que quieres usar.</p>
       </section>
-      <section class="main__cards">
-        <a href="https://www.google.com" target="_blank" class="card">
-          <img src="./images/logo-simuladores.png" alt="image">
-          <div class="card__title">
-            <h4>Simuladores</h4>
-            <button>Abrir</button>
-          </div>
-        </a>
-        <a href="https://www.google.com" target="_blank" class="card inactive">
-          <img src="./images/logo-vallemagico.png" alt="image">
-          <div class="card__title">
-            <h4>Valle Mágico</h4>
-            <button>Abrir</button>
-          </div>
-        </a>
-        <a href="https://www.google.com" target="_blank" class="card">
-          <img src="./images/wikipedia.png" alt="image">
-          <div class="card__title">
-            <h4>Wikipedia</h4>
-            <button>Abrir</button>
-          </div>
-        </a>
-        <a href="https://www.google.com" target="_blank" class="card">
-          <img src="./images/moodle.png" alt="image">
-          <div class="card__title">
-            <h4>Moodle</h4>
-            <button>Abrir</button>
-          </div>
-        </a>
-        <a href="https://www.google.com" target="_blank" class="card">
-          <img src="./images/logo-colchadetesoros.png" alt="image">
-          <div class="card__title">
-            <h4>Colcha de tesoros</h4>
-            <button>Abrir</button>
-          </div>
-        </a>
+      <section class="main__cards" id="cards">
+        
       </section>
     </main>
+    <script src="./apps.js"></script>
+    <script>
+      document.getElementById("cards").innerHTML = agregarAplicaciones
+          .map(
+            (data, index) => `
+              <a href="${data.url}" target="_blank" class="${data.isActive ? "card" : "inactive"
+                    }">
+                <img src="${data.image}" alt="image">
+                <div class="card__title">
+                  <h4>${data.title}</h4>
+                  <button>Abrir</button>
+                </div>
+              </a>
+            `
+          )
+          .join("");
+    </script>
   </body>
 </html>
