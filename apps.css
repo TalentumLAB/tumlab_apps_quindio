@@ -1,147 +1,116 @@
 @font-face {
-  font-family: "Avenir Next Rounded Pro Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir Next Rounded Pro Medium"),
-    url(./fonts/AvenirNextRoundedProMedium.woff) format("woff");
-}
-@font-face {
-  font-family: "Avenir Next Rounded Pro Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir Next Rounded Pro Regular"),
-    url(./fonts/AvenirNextRoundedProRegular.woff) format("woff");
-}
-body {
-  margin: 0;
-  padding: 0;
-  background: #e5e5e5;
-  /* background-image: url(./images/bg.jpg); */
-}
-a {
-  text-decoration: none;
-}
-nav {
-  background: #ffffff;
-  box-shadow: 0px 2px 10px rgba(163, 163, 163, 0.2);
-  height: 4.625rem;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-nav img {
-  width: 5rem;
-  margin-left: 4rem;
-}
-main {
-  padding: 4% 4%;
-}
-.main__text {
-  margin-top: 6rem;
-  /* margin-left: 4%; */
-}
-.main__text > h2 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.05px;
-  color: #373737;
-}
-.main__text > p {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.05px;
-  color: #575757;
-  margin-top: -1rem;
-}
-.main__cards {
-  /* background-color: #159be0; */
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.card {
-  flex-grow: 0;
-  position: relative;
-  width: 17rem;
-  height: 20rem;
-  background: #fffefe;
-  box-shadow: 0px 8px 24px rgba(130, 129, 129, 0.15);
-  border-radius: 10px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.card img {
-  width: 80%;
-  margin-top: -2rem;
-}
-.card__title {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 0rem;
-  width: 100%;
-  height: 3.9375rem;
-  background: rgba(229, 229, 229, 0.25);
-  backdrop-filter: blur(20px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 0px 0px 10px 10px;
-  z-index: 5;
-}
-.card__title > h4 {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.05px;
-  color: #373737;
-  margin: 0.7rem;
-}
-.card__title > button {
-  position: absolute;
-  width: 48px;
-  height: 24px;
-  right: 1.125rem;
-  top: 1.75rem;
-
-  background: #159be0;
-  border-radius: 20px;
-  border: none;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.05px;
-  color: #ffffff;
-  cursor: pointer;
-}
-.inactive {
-  display: none;
-}
-
-@media (max-width: 670px) {
-  .main__cards {
-    /* background-color: #159be0; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+	font-family: "Avenir Next Rounded Pro Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Avenir Next Rounded Pro Medium"),
+	  url(./fonts/AvenirNextRoundedProMedium.woff) format("woff");
   }
-}
+  @font-face {
+	font-family: "Avenir Next Rounded Pro Regular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Avenir Next Rounded Pro Regular"),
+	  url(./fonts/AvenirNextRoundedProRegular.woff) format("woff");
+  }
+  body {
+	margin: 0;
+	padding: 0;
+	background-image: url(./images/bg.jpg);
+  }
+  a {
+	text-decoration: none;
+  }
+  /* Aquí se cambia el bakground */
+  .o-container-apps {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
+	/* filter: blur(5px); */
+  }
+  /* Aquí se cambia la capa que cubre el background */
+  .layer {
+	position: absolute;
+	background: url(./images/layer.png);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	z-index: -1;
+  
+	opacity: 0.8;
+	filter: blur(25px);
+  }
+  .o-container-grid {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  .o-content-grid {
+	/* background: chocolate; */
+	width: 95%;
+	height: auto;
+  
+	display: flex;
+	flex-direction: column;
+	/* background-color: aqua; */
+  }
+  .o-app-grid {
+	display: grid;
+	gap: 1.3rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .o-content-cards {
+	/* background-color: tomato; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1.8rem;
+  }
+  .o-content-cards p {
+	font-size: 1.5em;
+	/* letter-spacing: 0.1em; */
+	font-family: "Avenir Next Rounded Pro Medium";
+	color: white;
+	/* padding-bottom: 1em; */
+  }
+  .o-card-app {
+	/* background: #fafafa; */
+	width: auto;
+	height: auto;
+	/* margin-bottom: 0.8rem; */
+  }
+  .o-card {
+	/* background-color: thistle; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  @media (max-width: 800px) {
+	.o-container-apps {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  align-items: flex-start;
+	}
+	.o-container-grid {
+	  display: flex;
+	  flex-direction: column;
+	  /* align-items: flex-start; */
+	  justify-content: flex-start;
+	  /* background-color: aqua; */
+	}
+  }
+  
