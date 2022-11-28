@@ -178,6 +178,14 @@ section {
   height: 90vh;
 }
 
+.div_img_title {
+  height: 150px;
+}
+
+.div_description {
+  height: 10rem;
+}
+
 /* Media Queries */
 
 @media (min-width: 1800px) {
@@ -196,7 +204,7 @@ section {
   }
   .home_section_info {
     height: 107vh;
-  } 
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -222,6 +230,13 @@ section {
 }
 
 @media (max-width: 575.98px) {
+  .div_img_title {
+    height: auto;
+  }
+
+  .div_description {
+    height: auto;
+  }
   section {
     height: 100%;
   }

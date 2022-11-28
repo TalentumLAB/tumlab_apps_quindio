@@ -143,15 +143,15 @@ const showAppDetails = () => {
     if (app.key == key) {
       appContainer.innerHTML = `
       <div class="col-7 animate__animated animate__fadeIn animate__slower col-left mt-4">
-        <div> 
+        <div class="div_img_title"> 
         <img src="${app.title}" class="img_title" alt="" />
         </div>
-        <div> 
+        <div class="div_description"> 
         <h5 class="description text-break text-wrap">
          ${app.description}
         </h5>
         </div>
-        <div> 
+        <div class="div_btn_go"> 
         <a class="btn_go" href="${app.url}" target="_blank">Iniciar</a>
         </div>
       </div>
