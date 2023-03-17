@@ -1,5 +1,5 @@
 /// Habilitar o deshabilitar footer
-const ENABLED_FOOTER = true;
+const ENABLED_FOOTER = false;
 
 //Arreglo de las aplicaciones
 const addApps = [
@@ -27,11 +27,57 @@ const addApps = [
           "El sistema de información es una de herramienta para reportes de la plataforma de contenido pedagogico que permite visualizar indicadores, desplegar gráficas y generar reportes sobre la información del estado y avance de los usuarios en las actividades elaboradas en los diferentes cursos de la plataforma.",
         url: "http://tumlab.local:3000",
       },
+      {
+        order: 3,
+        thumbnail: "./img/openstreetmap/open_street_maps.png",
+        is_show: true,
+        title: "./img/openstreetmap/title_openstreetmap.svg",
+        cover: "./img/openstreetmap/cover_openstreetmap.svg",
+        description:
+          "Plataforma para visualizacion de mapas con diversas funcionalidades como: busqueda de lugares, navegacion interactiva con el mapamundi, entre otras. Adicionalmente permite ver información sobre las vías de las ciudades más importantes.",
+        url: "http://tumlab.local:8081",
+      },
+    ]
+  },
+  {
+    category_name: 'SAI',
+    enable: true,
+    children: [
+      {
+        order: 1,
+        thumbnail: "./img/sai/SAI_Color2.png",
+        is_show: true,
+        title: "./img/sai/SAI_Color.png",
+        cover: "./img/sai/playa.svg",
+        description:
+          "Explora San Andrés Isla y sorpréndete con experiencias de aventura natural, riqueza cultural y la belleza del mar de los siete colores.",
+        url: "http://tumlab.local:3000",
+      },
+      {
+        order: 1,
+        thumbnail: "./img/superset/superset_thumbnail.png",
+        is_show: true,
+        title: "./img/superset/superset_title.png",
+        cover: "./img/superset/superset_cover.png",
+        description:
+          "Superset es rápido, liviano, intuitivo y está cargado de opciones que facilitan a los usuarios de todos los conjuntos de habilidades explorar y visualizar sus datos, desde simples gráficos de líneas hasta gráficos geoespaciales altamente detallados.",
+        url: "http://tumlab.local:8088",
+      },
+      {
+        order: 3,
+        thumbnail: "./img/openstreetmap/open_street_maps.png",
+        is_show: true,
+        title: "./img/openstreetmap/title_openstreetmap.svg",
+        cover: "./img/openstreetmap/cover_openstreetmap.svg",
+        description:
+          "Plataforma para visualizacion de mapas con diversas funcionalidades como: busqueda de lugares, navegacion interactiva con el mapamundi, entre otras. Adicionalmente permite ver información sobre las vías de las ciudades más importantes.",
+        url: "http://tumlab.local:8081",
+      },
     ]
   },
   {
     category_name: 'Temas lúdicos',
-    enable: true,
+    enable: false,
     children: [
       {
         order: 1,
@@ -57,7 +103,7 @@ const addApps = [
   },
   {
     category_name: 'Simuladores',
-    enable: true,
+    enable: false,
     children: [
       {
         order: 1,
@@ -83,7 +129,7 @@ const addApps = [
   },
   {
     category_name: 'Inteligencia de negocios',
-    enable: true,
+    enable: false,
     children: [
       {
         order: 1,
@@ -99,12 +145,12 @@ const addApps = [
   },
   {
     category_name: 'Contenido informativo',
-    enable: true,
+    enable: false,
     children: [
       {
         order: 1,
         thumbnail: "./img/wiki/wiki_thumbnail.png",
-        is_show: true,
+        is_show: false,
         title: "./img/wiki/wiki_title.png",
         cover: "./img/wiki/wiki_cover.png",
         description:
@@ -114,7 +160,7 @@ const addApps = [
       {
         order: 2,
         thumbnail: "./img/mediacms/card_mediacms.png",
-        is_show: true,
+        is_show: false,
         title: "./img/mediacms/title_mediacms.svg",
         cover: "./img/mediacms/cover_mediacms.svg",
         description:
