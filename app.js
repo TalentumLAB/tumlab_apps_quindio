@@ -48,7 +48,7 @@ const addApps = [
         thumbnail: "./img/sai/SAI_Color2.png",
         is_show: true,
         title: "./img/sai/SAI_Color.png",
-        cover: "./img/sai/playa.svg",
+        cover: "./img/sai/vector-550px.svg",
         description:
           "Explora San Andrés Isla y sorpréndete con experiencias de aventura natural, riqueza cultural y la belleza del mar de los siete colores.",
         url: "http://tumlab.local:3000",
