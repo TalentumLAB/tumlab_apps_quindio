@@ -110,7 +110,7 @@ const addApps = [
         cover: "./img/simuladores/simuladores_cover.png",
         description:
           "Simulaciones interactivas en Física, Química, Ciencias basada en el proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder. Estos recursos nacen de la investigación educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubren.",
-        url: "http://kiwix.aulasquindio.local/phet_es_2022-12/A/index.html",
+        url: "http://content.aulasquindio.local/phet_es_2022-12/A/index.html",
       },
       {
         order: 2,
@@ -120,7 +120,7 @@ const addApps = [
         cover: "./img/simulators/simu_image.png",
         description:
           "Interactive simulations in Physics, Chemistry, Science based on the PhET Interactive Simulations project at the University of Colorado at Boulder. These resources stem from extensive educational research and engage students through an intuitive, game-like environment where they learn by exploring while practicing English.",
-        url: "http://kiwix.aulasquindio.local/phet_en_2023-01/A/index.html",
+        url: "http://content.aulasquindio.local/phet_en_2023-01/A/index.html",
       }
     ],
   },
@@ -152,7 +152,7 @@ const addApps = [
         cover: "./img/wiki/wiki_cover.png",
         description:
           "Wikipedia es una página web para realizar consultas online de contenido abierto, una web que almacena, recopila y transmite información de manera totalmente estructurada.",
-        url: "http://kiwix.aulasquindio.local/wikipedia_es_all_nopic_2022-10/A/Wikipedia:Offline",
+        url: "http://content.aulasquindio.local/wikipedia_es_all_nopic_2022-10/A/Wikipedia:Offline",
       },
       {
         order: 2,
