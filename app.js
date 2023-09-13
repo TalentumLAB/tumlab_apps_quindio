@@ -95,6 +95,16 @@ const addApps = [
         description:
           "Es un videojuego donde Agau, un robot viajero del tiempo, llega del año 2200 a enseñarnos a salvar el mundo de los residuos tecnológicos, a través de 4 estaciones con varias misiones podemos aprender qué hacer para reducir el impacto medioambiental de los residuos.",
         url: "http://agau.aulasquindio.local",
+      },
+      {
+        order: 2,
+        thumbnail: "./img/scratch/scratch_thumbnail.png",
+        is_show: true,
+        title: "./img/scratch/scratch_title.png",
+        cover: "./img/scratch/scratch_cover.png",
+        description:
+          "Scratch es la comunidad de programación para niños y niñas más grande del mundo, y un lenguaje de programación con una interfaz sencilla que permite a los jóvenes crear historias digitales, juegos y animaciones. Scratch está diseñado, desarrollado y moderado por la Fundación Scratch, una organización sin ánimo de lucro. Scratch promueve el pensamiento computacional y las habilidades en resolución de problemas; enseñanza y aprendizaje creativos, auto expresión y colaboración; e igualdad en informática.",
+        url: "http://192.168.192.163:8086",
       }
     ],
   },
