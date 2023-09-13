@@ -25,7 +25,7 @@ const addApps = [
         cover: "./img/integratic/baner.jpg",
         description:
           "INTEGRATIC, una plataforma educativa que facilita a los menores el acceso a la información, es decir, acceder a contendidos académicos sin necesidad de estar conectados a internet.",
-        url: "http://maps.aulasquindio.local",
+        url: "http://integratic.aulasquindio.local",
       },
     ]
   },
