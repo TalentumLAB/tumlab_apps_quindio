@@ -5,43 +5,50 @@ const ENABLED_FOOTER = false;
 const addApps = [
   {
     category_name: 'Plataformas LMS',
-    enable: false,
+    enable: true,
     children: [
       {
         order: 1,
-        thumbnail: "./img/tumlab/tumlab_thumbnail.png",
+        thumbnail: "./img/steam.png",
         is_show: true,
-        title: "./img/tumlab/tumlab_title.png",
+        title: "./img/steam.png",
         cover: "./img/tumlab/tumlab_cover.png",
         description:
-          "TUMLAB LMS es una plataforma de aprendizaje diseñada para proporcionarle a educadores, administradores y estudiantes un sistema integrado único, robusto y seguro para crear ambientes de aprendizaje personalizados. Una interfaz simple, recursos bien documentados, junto con mejoras continuas, hacen a Moodle fácil de aprender y usar.",
-        url: "http://tumlab.local:5000",
-      },
-      {
-        order: 2,
-        thumbnail: "./img/sistema_de_informacion/sistema_de_informacion.svg",
-        is_show: true,
-        title: "./img/sistema_de_informacion/sistema_de_informacion_title.svg",
-        cover: "./img/sistema_de_informacion/sistema_de_informacion_cover.png",
-        description:
-          "El sistema de información es una de herramienta para reportes de la plataforma de contenido pedagogico que permite visualizar indicadores, desplegar gráficas y generar reportes sobre la información del estado y avance de los usuarios en las actividades elaboradas en los diferentes cursos de la plataforma.",
-        url: "http://tumlab.local:3000",
+          "LMS es una plataforma de aprendizaje diseñada para proporcionarle a educadores, administradores y estudiantes un sistema integrado único, robusto y seguro para crear ambientes de aprendizaje personalizados. Una interfaz simple, recursos bien documentados, junto con mejoras continuas, hacen a Moodle fácil de aprender y usar.",
+        url: "http://lms.aulasquindio.local",
       },
       {
         order: 3,
-        thumbnail: "./img/openstreetmap/open_street_maps.png",
+        thumbnail: "./img/integratic/it.png",
         is_show: true,
-        title: "./img/openstreetmap/title_openstreetmap.svg",
-        cover: "./img/openstreetmap/cover_openstreetmap.svg",
+        title: "./img/integratic/it.png",
+        cover: "./img/integratic/baner.jpg",
         description:
-          "Plataforma para visualizacion de mapas con diversas funcionalidades como: busqueda de lugares, navegacion interactiva con el mapamundi, entre otras. Adicionalmente permite ver información sobre las vías de las ciudades más importantes.",
-        url: "http://tumlab.local:8081",
+          "INTEGRATIC, una plataforma educativa que facilita a los menores el acceso a la información, es decir, acceder a contendidos académicos sin necesidad de estar conectados a internet.",
+        url: "http://maps.aulasquindio.local",
       },
     ]
   },
   {
-    category_name: 'SAI',
+    category_name: 'Sistema de información',
     enable: true,
+    children: [
+      {
+        order: 2,
+        thumbnail: "./img/steam.png",
+        is_show: true,
+        title: "./img/steam.png",
+        cover: "./img/sistema_de_informacion/sistema_de_informacion_cover.png",
+        description:
+          "El sistema de información es una de herramienta para reportes de la plataforma de contenido pedagogico que permite visualizar indicadores, desplegar gráficas y generar reportes sobre la información del estado y avance de los usuarios en las actividades elaboradas en los diferentes cursos de la plataforma.",
+        url: "http://si.aulasquindio.local",
+      }
+
+    ]
+  },
+  {
+    category_name: 'SAI',
+    enable: false,
     children: [
       {
         order: 1,
@@ -77,33 +84,23 @@ const addApps = [
   },
   {
     category_name: 'Temas lúdicos',
-    enable: false,
+    enable: true,
     children: [
       {
         order: 1,
-        thumbnail: "./img/scratch/scratch_thumbnail.png",
-        is_show: true,
-        title: "./img/scratch/scratch_title.png",
-        cover: "./img/scratch/scratch_cover.png",
-        description:
-          "Scratch es la comunidad de programación para niños y niñas más grande del mundo, y un lenguaje de programación con una interfaz sencilla que permite a los jóvenes crear historias digitales, juegos y animaciones. Scratch está diseñado, desarrollado y moderado por la Fundación Scratch, una organización sin ánimo de lucro. Scratch promueve el pensamiento computacional y las habilidades en resolución de problemas; enseñanza y aprendizaje creativos, auto expresión y colaboración; e igualdad en informática.",
-        url: "http://192.168.4.1:8086",
-      },
-      {
-        order: 2,
         thumbnail: "./img/residuos/AGAU_CARD.png",
         is_show: true,
         title: "./img/residuos/AGAU_TITLE.png",
         cover: "./img/residuos/AGAU_IMAGE.png",
         description:
           "Es un videojuego donde Agau, un robot viajero del tiempo, llega del año 2200 a enseñarnos a salvar el mundo de los residuos tecnológicos, a través de 4 estaciones con varias misiones podemos aprender qué hacer para reducir el impacto medioambiental de los residuos.",
-        url: "http://tumlab.local:8083/",
-      },
+        url: "http://agau.aulasquindio.local",
+      }
     ],
   },
   {
     category_name: 'Simuladores',
-    enable: false,
+    enable: true,
     children: [
       {
         order: 1,
@@ -113,7 +110,7 @@ const addApps = [
         cover: "./img/simuladores/simuladores_cover.png",
         description:
           "Simulaciones interactivas en Física, Química, Ciencias basada en el proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder. Estos recursos nacen de la investigación educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubren.",
-        url: "http://tumlab.local:8087/phet_es_2022-12/A/index.html",
+        url: "http://kiwix.aulasquindio.local/phet_es_2022-12/A/index.html",
       },
       {
         order: 2,
@@ -123,7 +120,7 @@ const addApps = [
         cover: "./img/simulators/simu_image.png",
         description:
           "Interactive simulations in Physics, Chemistry, Science based on the PhET Interactive Simulations project at the University of Colorado at Boulder. These resources stem from extensive educational research and engage students through an intuitive, game-like environment where they learn by exploring while practicing English.",
-        url: "http://tumlab.local:8087/phet_en_2023-01/A/index.html",
+        url: "http://kiwix.aulasquindio.local/phet_en_2023-01/A/index.html",
       }
     ],
   },
@@ -145,27 +142,27 @@ const addApps = [
   },
   {
     category_name: 'Contenido informativo',
-    enable: false,
+    enable: true,
     children: [
       {
         order: 1,
         thumbnail: "./img/wiki/wiki_thumbnail.png",
-        is_show: false,
+        is_show: true,
         title: "./img/wiki/wiki_title.png",
         cover: "./img/wiki/wiki_cover.png",
         description:
           "Wikipedia es una página web para realizar consultas online de contenido abierto, una web que almacena, recopila y transmite información de manera totalmente estructurada.",
-        url: "http://tumlab.local:8087/wikipedia_es_all_nopic_2022-10/A/Wikipedia:Offline",
+        url: "http://kiwix.aulasquindio.local/wikipedia_es_all_nopic_2022-10/A/Wikipedia:Offline",
       },
       {
         order: 2,
         thumbnail: "./img/mediacms/card_mediacms.png",
-        is_show: false,
+        is_show: true,
         title: "./img/mediacms/title_mediacms.svg",
         cover: "./img/mediacms/cover_mediacms.svg",
         description:
           "Sistema de gestión de contenido desarrollado para ver y compartir medios audiovisuales pedagógicos enfocados en las áreas de Álgebra, Física, Geometría y Matemáticas.",
-        url: "http://tumlab.local:8082",
+        url: "http://videos.aulasquindio.local",
       },
       {
         order: 3,
@@ -175,7 +172,7 @@ const addApps = [
         cover: "./img/openstreetmap/cover_openstreetmap.svg",
         description:
           "Plataforma para visualizacion de mapas con diversas funcionalidades como: busqueda de lugares, navegacion interactiva con el mapamundi, entre otras. Adicionalmente permite ver información sobre las vías de las ciudades más importantes.",
-        url: "http://tumlab.local:8081",
+        url: "http://maps.aulasquindio.local",
       },
     ],
   },
