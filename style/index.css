@@ -14,7 +14,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, #1b5a91 0%, #0b8acb 100%);
+  /* background: #17a447; */
   color: white;
   font-family: "Montserrat", sans-serif;
 }
@@ -30,7 +30,10 @@ body:has(.footer) .main-container {
 .main-container {
   min-height: 100vh;
   width: 100%;
-  background-size: 100% auto;
+  background-size: cover;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .main-container .bg-vectors {
@@ -41,7 +44,7 @@ body:has(.footer) .main-container {
   width: 100%;
   height: 100%;
   opacity: .2;
-  background: url('../img/vector_left.png') left center no-repeat, url('../img/vector_right.png') right top no-repeat;
+  /* background: url('../img/vector_left.png') left center no-repeat, url('../img/vector_right.png') right top no-repeat; */
   background-size: auto 100%, auto 50%;
 }
 
@@ -52,6 +55,19 @@ body:has(.footer) .main-container {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 60px;
+  /* background: #17a447; */
+}
+
+.home-img{
+	width: 30%;
+}
+
+.content p,h3{
+	color: white !important;
+}
+
+.content img{
+	color: white;
 }
 
 .content .card-img {
@@ -71,7 +87,7 @@ body:has(.footer) .main-container {
 }
 
 .card-app.selected > div {
-  border: 4px solid #0C5EAA;
+  border: 4px solid #145583;
 }
 
 .card-app:hover .card-img {
@@ -86,7 +102,7 @@ body:has(.footer) .main-container {
   height: 100%;
   top: 0;
   right: 0;
-  background: linear-gradient(270deg, #195975 0%, rgba(27, 137, 195, 0) 91.67%);
+  background: linear-gradient(270deg, #145583 0%, rgba(27, 137, 195, 0) 91.67%);
   margin-top: 0;
 }
 
