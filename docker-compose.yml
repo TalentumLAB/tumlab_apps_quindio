@@ -7,5 +7,6 @@ services:
     restart: unless-stopped
     volumes:
       - .:/usr/share/nginx/html
+      - /syncthing/agent.config:/usr/share/nginx/html/info/agent.json
     ports:
       - 8090:80
